@@ -1,7 +1,8 @@
 
 import { FC } from 'react';
-import { Image, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import { styles } from './UserStory.style';
+import { StoryImg } from '../StoryImg/StoryImg';
 
 interface IUserStory {
   userName: string
@@ -9,9 +10,7 @@ interface IUserStory {
 export const UserStory: FC<IUserStory> = ({ userName }) => {
   return (
     <View style={styles.story}>
-      <View style={styles.imgWrapper} >
-        <Image style={styles.img} source={require('../../assets/images/gray.jpeg')} />
-      </View>
+      <StoryImg size={40} />
       <Text style={styles.imgText}>{userName}</Text>
     </View>
 
