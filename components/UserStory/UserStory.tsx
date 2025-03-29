@@ -10,7 +10,7 @@ interface IUserStory {
 export const UserStory: FC<IUserStory> = ({ userName }) => {
   return (
     <View style={styles.story}>
-      <StoryImg size={40} />
+      <StoryImg size={70} />
       <Text style={styles.imgText}>{userName}</Text>
     </View>
 
